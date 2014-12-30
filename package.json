@@ -9,7 +9,12 @@
   "license": "MIT",
   "author": {
     "name": "Robin Radic",
-    "email": "robin@radic.nl"
+    "email": "robin@radic.nl",
+    "url": "http://robin.radic.nl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robinradic/wow-raid-icons"
   },
   "engines": {
     "node": ">= 0.10.0"
