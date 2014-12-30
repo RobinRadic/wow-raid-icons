@@ -5,3 +5,6 @@
 /.idea/
 /src/styles2
 /preview
+/.yo-rc.json
+/preview
+/.sass-cache
