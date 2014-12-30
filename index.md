@@ -1,6 +1,24 @@
-wow-raid-icons
-=============
-**version:** 0.0.1
+---
+layout: page
+title: WoW Raid Icons
+minify_content: false
+navigation:
+  - name: Home
+    link: /
+    icon: fa fa-home
+  - name: Overview
+    link: /wow-raid-icons
+    icon: fa fa-dashboard
+  - name: Demonstration
+    link: /wow-raid-icons/demo
+    icon: fa fa-code
+  - name: Coverage
+    link: /wow-raid-icons/coverage
+    icon: fa fa-code
+
+---
+
+
 
 
 ## Getting Started
