@@ -1,0 +1,12 @@
+@mixin border-radius($radius) {
+  @include border-top-radius($radius);
+  @include border-left-radius($radius);
+  @include border-bottom-radius($radius);
+  @include border-right-radius($radius);
+}
+
+
+@mixin text-shadow($right, $down, $blur-radius, $color){
+    text-shadow: #{$right}px #{$down}px #{$blur-radius}px $color;
+    filter: dropshadow(color=$color, offx=$right, offy=$down);
+}
