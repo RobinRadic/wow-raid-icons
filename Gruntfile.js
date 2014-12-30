@@ -131,6 +131,27 @@ module.exports = function (grunt) {
             },
             serve: ['watch', 'connect:livereload:keepalive']
         },
+        radic_jsdoc: {
+            docs: {}
+        },
+        radic_coverage: {
+            docs: {
+                options: {
+                    frontMatterPath: 'docs/processed-front-matter.yml'
+                }
+            }
+        },
+        radic_ghpages_publish: {
+            docs: {
+                options: {
+                    dir: 'docs',
+                    indexName: 'index.md',
+                    frontMatterPath: 'docs/processed-front-matter.yml',
+                    readmePath: 'README.md',
+                    replacer: '# github-jquery-widgets'
+                }
+            }
+        },
         publisher: {
             bower: {
                 enabled: true
@@ -142,8 +163,9 @@ module.exports = function (grunt) {
 
 
     });
+    grunt.registerTask('docs:publish', ['radic_jsdoc:docs', 'radic_coverage:docs', 'radic_ghpages_publish:docs']);
 
-    // serve:
+
     grunt.registerTask('build', ['clean:dist', 'clean:preview', 'sass:build', 'sass:demo', 'copy:preview']);
     grunt.registerTask('serve', ['build', 'concurrent:serve']);
     grunt.registerTask('dist', ['build', 'cssmin']);
