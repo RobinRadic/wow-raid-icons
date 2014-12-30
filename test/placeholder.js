@@ -10,8 +10,13 @@ var path = require('path'),
     should = chai.should(),
 
     sinon = require('sinon');
+
+var lib = require('../lib');
+
 describe('DB', function () {
     it('should be ok', function(){
+        lib.test();
         expect(true).to.eql(true);
+
     })
 });

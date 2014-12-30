@@ -1,6 +1,5 @@
-wow-raid-icons
-=============
-**version:** 0.0.1
+# wow-raid-icons
+
 
 
 ## Getting Started

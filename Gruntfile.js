@@ -156,7 +156,7 @@ module.exports = function (grunt) {
                     indexName: 'index.md',
                     frontMatterPath: 'docs/processed-front-matter.yml',
                     readmePath: 'README.md',
-                    replacer: '# github-jquery-widgets'
+                    replacer: '# wow-raid-icons'
                 }
             }
         },
