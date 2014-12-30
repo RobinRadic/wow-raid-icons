@@ -16,6 +16,14 @@ module.exports = function (grunt) {
             preview: 'preview/**'
         },
         copy: {
+            demo: {
+                files: [{
+                    expand: true,
+                    cwd: 'preview',
+                    src: '**',
+                    dest: 'docs/demo'
+                }]
+            },
             preview: {
                 files: [{
                     expand: true,
@@ -165,8 +173,8 @@ module.exports = function (grunt) {
     });
     grunt.registerTask('docs:publish', ['radic_jsdoc:docs', 'radic_coverage:docs', 'radic_ghpages_publish:docs']);
 
-
     grunt.registerTask('build', ['clean:dist', 'clean:preview', 'sass:build', 'sass:demo', 'copy:preview']);
+    grunt.registerTask('demo:build', ['build', 'copy:demo']);
     grunt.registerTask('serve', ['build', 'concurrent:serve']);
     grunt.registerTask('dist', ['build', 'cssmin']);
 };
