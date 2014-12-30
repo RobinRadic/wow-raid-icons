@@ -1,0 +1,35 @@
+
+
+$image-path: '../images/';
+$class-prefix: 'wri';
+
+$wri-raid-names: "MC", "BWL", "AQ20", "AQ40", // Classic
+"Kara", "Gruul", "Mag", "ZA", "SSC", "TK", "MH",  "BT", "SWP", // Burning crusade
+"Naxx", "OS", "VoA", "EoE", "Uld", "ToC", "Ony", "ICC", "RS", // Wrath of the Lich King
+"BH", "BoT", "BWD", "ToFW", "FL", "DS", // Cataclysm
+"MV", "HoF", "ToES", "ToT", "SoO"; // Mists of Pandaria
+
+$wri-font-color: #FFF;
+$wri-font: Monaco, Menlo, Consolas, "Courier New", monospace;
+$wri-font-size: 12px;
+$wri-font-weight: bold;
+
+
+
+$wri-shadow: 0px 0px 2px 2px rgba(#333, 0.5);
+$wri-border-size: 0;
+$wri-border-color: #A3B;
+$wri-border-rgba: rgba($wri-border-color, 1);
+$wri-z-index: 1;
+
+
+$wri-left: 4;
+$wri-bottom: 0;
+
+
+$wri-hover-shadow: 0px 0px 2px 2px rgba(#333, 0.5);
+$wri-hover-border-size: 2;
+$wri-hover-border-color: #333;
+$wri-hover-border-rgba: rgba($wri-hover-border-color, 0.5);
+$wri-hover-font-color: #888;
+$wri-hover-font-size: 15px;

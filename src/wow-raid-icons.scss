@@ -1,0 +1,201 @@
+@import "base";
+
+// wow raid icon
+.#{$class-prefix} {
+    @include border-radius(3px);
+    @include box-shadow(#0d0703 0 0 5px);
+    @include box-sizing(border-box);
+
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 38px;
+    height: 38px;
+    margin: 1px 11px 1px 1px;
+    background: #3b1c11 url($image-path + "/thumbnails.png") no-repeat;
+
+    position: relative;
+
+
+    &.#{$class-prefix}-hover:hover {
+        @include box-shadow($wri-hover-shadow);
+        border: #{$wri-hover-border-size}px solid $wri-hover-border-color;
+        border: #{$wri-hover-border-size}px solid $wri-hover-border-rgba;
+        font-size: $wri-hover-font-size;
+        color: $wri-hover-font-color;
+        &:after{ left: #{($wri-left - $wri-hover-border-size)}px; bottom: #{($wri-bottom - $wri-hover-border-size)}px; }
+        &.heroic:before{ right: #{(5 - $wri-hover-border-size)}px; top: #{(4 - $wri-hover-border-size)}px; }
+    }
+
+    &:after{
+        color: $wri-font-color;
+        content: "";
+        position: absolute;
+        left: #{($wri-left - $wri-border-size)}px;
+        bottom: #{($wri-bottom - $wri-border-size)}px;
+
+        font: $wri-font;
+        font-size: $wri-font-size;
+        font-weight: $wri-font-weight;
+        z-index: $wri-z-index + 1;
+        @include wri-text-shadow();
+
+
+    }
+
+
+    $current-position: 0; // 61
+    $current-position-29: 0;
+    $current-position-39: 0;
+    $current-position-47: 0;
+
+    @each $raid-name in $wri-raid-names{
+        &.#{$class-prefix}-#{$raid-name}.#{$class-prefix}-name {
+            background-position: -#{($current-position + 1 + $wri-border-size)}px -#{$wri-border-size}px;
+            &.#{$class-prefix}-hover:hover{ background-position: -#{($current-position + 1 + $wri-hover-border-size)}px -#{$wri-hover-border-size}px; }
+
+            &:after{
+                content: $raid-name;
+            }
+        }
+        $current-position: ($current-position + 61);
+        $current-position-29: ($current-position-29 + (61 / 2));
+        $current-position-39: ($current-position-39 + (61 / 1.5));
+        $current-position-47: ($current-position-47 + (61 / 1.25));
+    }
+
+
+    //.#{$class-prefix}-ahnkahet-the-old-kingdom { background-position: -960px 0; }
+    &.#{$class-prefix}-AQ40 { background-position: -2040px 0; }
+    //.#{$class-prefix}-auchenai-crypts { background-position: -760px 0; }
+    //.#{$class-prefix}-azjolnerub { background-position: -1000px 0; }
+    //.#{$class-prefix}-baradin-hold { background-position: -2800px 0; }
+    //.#{$class-prefix}-blackfathom-deeps { background-position: 0 0; }
+    //.#{$class-prefix}-blackrock-caverns { background-position: -1600px 0; }
+    //.#{$class-prefix}-blackrock-depths { background-position: -40px 0; }
+    //.#{$class-prefix}-blackrock-spire { background-position: -80px 0; }
+    &.#{$class-prefix}-BT { background-position: -2360px 0; }
+    &.#{$class-prefix}-BWD { background-position: -2880px 0; }
+    &.#{$class-prefix}-BWL { background-position: -1960px 0; }
+    //.#{$class-prefix}-deadmines { background-position: -120px 0; }
+    //.#{$class-prefix}-dire-maul { background-position: -160px 0; }
+    //.#{$class-prefix}-draktharon-keep { background-position: -1080px 0; }
+    &.#{$class-prefix}-FL { background-position: -2960px 0; }
+    //.#{$class-prefix}-gnomeregan { background-position: -200px 0; }
+    //.#{$class-prefix}-grim-batol { background-position: -1640px 0; }
+    &.#{$class-prefix}-Gruul { background-position: -2120px 0; }
+    //.#{$class-prefix}-gundrak { background-position: -1160px 0; }
+    //.#{$class-prefix}-halls-of-lightning { background-position: -1200px 0; }
+    //.#{$class-prefix}-halls-of-origination { background-position: -1680px 0; }
+    //.#{$class-prefix}-halls-of-reflection { background-position: -1240px 0; }
+    //.#{$class-prefix}-halls-of-stone { background-position: -1280px 0; }
+    //.#{$class-prefix}-hellfire-ramparts { background-position: -840px 0; }
+    &.#{$class-prefix}-ICC { background-position: -2720px 0; }
+    &.#{$class-prefix}-Kara { background-position: -2080px 0; }
+    //.#{$class-prefix}-lost-city-of-the-tolvir { background-position: -1720px 0; }
+    //.#{$class-prefix}-magisters-terrace { background-position: -880px 0; }
+    &.#{$class-prefix}-Mag { background-position: -2160px 0; }
+    &.#{$class-prefix}-manatombs { background-position: -760px 0; }
+    &.#{$class-prefix}-maraudon { background-position: -240px 0; }
+    &.#{$class-prefix}-MC { background-position: -1920px 0; }
+    &.#{$class-prefix}-Naxx { background-position: -2440px 0; }
+    &.#{$class-prefix}-Ony { background-position: -2680px 0; }
+    //.#{$class-prefix}-opening-of-the-dark-portal { background-position: -800px 0; }
+    //.#{$class-prefix}-pit-of-saron { background-position: -1400px 0; }
+    //.#{$class-prefix}-ragefire-chasm { background-position: -280px 0; }
+    //.#{$class-prefix}-razorfen-downs { background-position: -320px 0; }
+    //.#{$class-prefix}-razorfen-kraul { background-position: -360px 0; }
+    //.#{$class-prefix}-AQ10 { background-position: -2000px 0; }
+    //.#{$class-prefix}-scarlet-monastery { background-position: -3280px 0; }
+    //.#{$class-prefix}-scholomance { background-position: -3320px 0; }
+    //.#{$class-prefix}-serpentshrine-cavern { background-position: -2240px 0; }
+    //.#{$class-prefix}-sethekk-halls { background-position: -760px 0; }
+    //.#{$class-prefix}-shadowfang-keep { background-position: -480px 0; }
+    //.#{$class-prefix}-shadow-labyrinth { background-position: -760px 0; }
+    //.#{$class-prefix}-stormwind-stockade { background-position: -520px 0; }
+    //.#{$class-prefix}-stratholme { background-position: -560px 0; }
+    //.#{$class-prefix}-sunken-temple { background-position: -600px 0; }
+    &.#{$class-prefix}-TK { background-position: -2280px 0; }
+    //.#{$class-prefix}-the-arcatraz { background-position: -2280px 0; }
+    &.#{$class-prefix}-BoT { background-position: -2840px 0; }
+    &.#{$class-prefix}-MH { background-position: -2320px 0; }
+    //.#{$class-prefix}-the-blood-furnace { background-position: -840px 0; }
+    //.#{$class-prefix}-the-botanica { background-position: -2280px 0; }
+    //.#{$class-prefix}-the-culling-of-stratholme { background-position: -1040px 0; }
+    //.#{$class-prefix}-the-escape-from-durnholde { background-position: -800px 0; }
+    &.#{$class-prefix}-EoE { background-position: -2560px 0; }
+    //.#{$class-prefix}-the-forge-of-souls { background-position: -1120px 0; }
+    //.#{$class-prefix}-the-mechanar { background-position: -2280px 0; }
+    //.#{$class-prefix}-the-nexus { background-position: -1320px 0; }
+    &.#{$class-prefix}-OS { background-position: -2480px 0; }
+    //.#{$class-prefix}-the-oculus { background-position: -1360px 0; }
+    //.#{$class-prefix}-the-ruby-sanctum { background-position: -2760px 0; }
+    //.#{$class-prefix}-the-shattered-halls { background-position: -840px 0; }
+    //.#{$class-prefix}-the-slave-pens { background-position: -2240px 0; }
+    //.#{$class-prefix}-the-steamvault { background-position: -2240px 0; }
+    //.#{$class-prefix}-the-stonecore { background-position: -1760px 0; }
+    &.#{$class-prefix}-SW { background-position: -2400px 0; }
+    //.#{$class-prefix}-the-underbog { background-position: -2240px 0; }
+    //.#{$class-prefix}-the-vortex-pinnacle { background-position: -1840px 0; }
+    &.#{$class-prefix}-ToTW { background-position: -2920px 0; }
+    //.#{$class-prefix}-throne-of-the-tides { background-position: -1800px 0; }
+    //.#{$class-prefix}-trial-of-the-champion { background-position: -1440px 0; }
+    &.#{$class-prefix}-ToC { background-position: -2640px 0; }
+    //.#{$class-prefix}-uldaman { background-position: -620px 0; }
+    &.#{$class-prefix}-Uld { background-position: -2600px 0; }
+    //.#{$class-prefix}-utgarde-keep { background-position: -1480px 0; }
+    //.#{$class-prefix}-utgarde-pinnacle { background-position: -1520px 0; }
+    &.#{$class-prefix}-VoA { background-position: -2520px 0; }
+    //.#{$class-prefix}-violet-hold { background-position: -1560px 0; }
+    //.#{$class-prefix}-wailing-caverns { background-position: -680px 0; }
+    //.#{$class-prefix}-zulaman { background-position: -920px 0; }
+    //.#{$class-prefix}-zulfarrak { background-position: -720px 0; }
+    //.#{$class-prefix}-zulgurub { background-position: -1880px 0; }
+    //.#{$class-prefix}-well-of-eternity { background-position: -3040px 0; }
+    //.#{$class-prefix}-end-time { background-position:-3120px 0 }
+    &.#{$class-prefix}-DS { background-position:-3000px 0 }
+    //.#{$class-prefix}-hour-of-twilight { background-position:-3080px 0 }
+    //.#{$class-prefix}-gate-of-the-setting-sun { background-position:-3160px 0 }
+    //.#{$class-prefix}-mogushan-palace { background-position:-3200px 0 }
+    //.#{$class-prefix}-scarlet-halls { background-position:-3240px 0 }
+    //.#{$class-prefix}-shadopan-monastery { background-position:-3360px 0 }
+    //.#{$class-prefix}-siege-of-niuzao-temple { background-position:-3400px 0 }
+    //.#{$class-prefix}-stormstout-brewery { background-position:-3440px 0 }
+    //.#{$class-prefix}-temple-of-the-jade-serpent { background-position:-3480px 0 }
+    &.#{$class-prefix}-HoF { background-position:-3520px 0 }
+    &.#{$class-prefix}-MV { background-position:-3560px 0 }
+    &.#{$class-prefix}-ToES { background-position:-3600px 0 }
+    //.#{$class-prefix}-arena-of-annihilation { background-position:-3640px 0 }
+    //.#{$class-prefix}-assault-on-zanvess { background-position:-3680px 0 }
+    //.#{$class-prefix}-unga-ingoo { background-position:-3720px 0 }
+    //.#{$class-prefix}-a-brewing-storm { background-position:-3760px 0 }
+    //.#{$class-prefix}-theramores-fall-alliance { background-position:-3800px 0 }
+    //.#{$class-prefix}-theramores-fall-horde { background-position:-3840px 0 }
+    //.#{$class-prefix}-crypt-of-forgotten-kings { background-position:-3880px 0 }
+    //.#{$class-prefix}-brewmoon-festival { background-position:-3920px 0 }
+    //.#{$class-prefix}-greenstone-village { background-position:-3960px 0 }
+    //.#{$class-prefix}-dagger-in-the-dark { background-position:-4000px 0 }
+    //.#{$class-prefix}-a-little-patience { background-position:-4040px 0 }
+    //.#{$class-prefix}-domination-point { background-position:-4080px 0 }
+    //.#{$class-prefix}-lions-landing { background-position:-4120px 0 }
+    &.#{$class-prefix}-ToT { background-position:-4160px 0 }
+    //.#{$class-prefix}-battle-on-the-high-seas-horde { background-position:-4200px 0 }
+    //.#{$class-prefix}-battle-on-the-high-seas-alliance { background-position:-4240px 0 }
+    //.#{$class-prefix}-blood-in-the-snow { background-position:-4280px 0 }
+    //.#{$class-prefix}-the-secrets-of-ragefire { background-position:-4320px 0 }
+    //.#{$class-prefix}-dark-heart-of-pandaria { background-position:-4360px 0 }
+    &.#{$class-prefix}-SoO { background-position:-4400px 0 }
+
+    //.#{$class-prefix}-auchindoun { background-position: -4440px 0; }
+    //.#{$class-prefix}-bloodmaul-slag-mines { background-position: -4480px 0; }
+    //.#{$class-prefix}-grimrail-depot { background-position: -4520px 0; }
+    //.#{$class-prefix}-iron-docks { background-position: -4560px 0; }
+    //.#{$class-prefix}-shadowmoon-burial-grounds { background-position: -4600px 0; }
+    //.#{$class-prefix}-skyreach { background-position: -4640px 0; }
+    //.#{$class-prefix}-the-everbloom { background-position: -4680px 0; }
+    //.#{$class-prefix}-upper-blackrock-spire { background-position: -4720px 0; }
+    &.#{$class-prefix}-HM { background-position: -4760px 0; }
+    &.#{$class-prefix}-BrF { background-position: -4800px 0; }
+}
+
+
