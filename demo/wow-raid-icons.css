@@ -1,0 +1,457 @@
+/**
+ * Retrieves a color value from the $material-colors Sass map
+ * Inspired by https://github.com/nilskaspersson/Google-Material-UI-Color-Palette/
+ *
+ * @function
+ * @param {string} color-name             - quoted, lower-case, dasherized color
+ *                                          name (e.g. 'pink', 'amber')
+ * @param {string} [color-variant='500']  - quoted, lowercase color variant (e.g.
+ *                                          '200', 'a100')
+ */
+.wri {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-box-shadow: #0d0703 0 0 5px;
+  box-shadow: #0d0703 0 0 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  display: block;
+  overflow: hidden;
+  width: 38px;
+  height: 38px;
+  margin: 1px 11px 1px 1px;
+  background: #3b1c11 url("../images//thumbnails.png") no-repeat;
+  position: relative;
+}
+.wri.wri-hover:hover {
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(51, 51, 51, 0.5);
+  box-shadow: 0px 0px 2px 2px rgba(51, 51, 51, 0.5);
+  border: 2px solid #333;
+  border: 2px solid rgba(51, 51, 51, 0.5);
+  font-size: 15px;
+  color: #888;
+}
+.wri.wri-hover:hover:after {
+  left: 2px;
+  bottom: -2px;
+}
+.wri.wri-hover:hover.heroic:before {
+  right: 3px;
+  top: 2px;
+}
+.wri:after {
+  color: #FFF;
+  content: "";
+  position: absolute;
+  left: 4px;
+  bottom: 0px;
+  font: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 2;
+  text-shadow: 2px 2px 2px #ff006e;
+  filter: dropshadow(color=#ff006e, offx=2, offy=2);
+}
+.wri.wri-MC.wri-name {
+  background-position: -1px -0px;
+}
+.wri.wri-MC.wri-name.wri-hover:hover {
+  background-position: -3px -2px;
+}
+.wri.wri-MC.wri-name:after {
+  content: "MC";
+}
+.wri.wri-BWL.wri-name {
+  background-position: -62px -0px;
+}
+.wri.wri-BWL.wri-name.wri-hover:hover {
+  background-position: -64px -2px;
+}
+.wri.wri-BWL.wri-name:after {
+  content: "BWL";
+}
+.wri.wri-AQ20.wri-name {
+  background-position: -123px -0px;
+}
+.wri.wri-AQ20.wri-name.wri-hover:hover {
+  background-position: -125px -2px;
+}
+.wri.wri-AQ20.wri-name:after {
+  content: "AQ20";
+}
+.wri.wri-AQ40.wri-name {
+  background-position: -184px -0px;
+}
+.wri.wri-AQ40.wri-name.wri-hover:hover {
+  background-position: -186px -2px;
+}
+.wri.wri-AQ40.wri-name:after {
+  content: "AQ40";
+}
+.wri.wri-Kara.wri-name {
+  background-position: -245px -0px;
+}
+.wri.wri-Kara.wri-name.wri-hover:hover {
+  background-position: -247px -2px;
+}
+.wri.wri-Kara.wri-name:after {
+  content: "Kara";
+}
+.wri.wri-Gruul.wri-name {
+  background-position: -306px -0px;
+}
+.wri.wri-Gruul.wri-name.wri-hover:hover {
+  background-position: -308px -2px;
+}
+.wri.wri-Gruul.wri-name:after {
+  content: "Gruul";
+}
+.wri.wri-Mag.wri-name {
+  background-position: -367px -0px;
+}
+.wri.wri-Mag.wri-name.wri-hover:hover {
+  background-position: -369px -2px;
+}
+.wri.wri-Mag.wri-name:after {
+  content: "Mag";
+}
+.wri.wri-ZA.wri-name {
+  background-position: -428px -0px;
+}
+.wri.wri-ZA.wri-name.wri-hover:hover {
+  background-position: -430px -2px;
+}
+.wri.wri-ZA.wri-name:after {
+  content: "ZA";
+}
+.wri.wri-SSC.wri-name {
+  background-position: -489px -0px;
+}
+.wri.wri-SSC.wri-name.wri-hover:hover {
+  background-position: -491px -2px;
+}
+.wri.wri-SSC.wri-name:after {
+  content: "SSC";
+}
+.wri.wri-TK.wri-name {
+  background-position: -550px -0px;
+}
+.wri.wri-TK.wri-name.wri-hover:hover {
+  background-position: -552px -2px;
+}
+.wri.wri-TK.wri-name:after {
+  content: "TK";
+}
+.wri.wri-MH.wri-name {
+  background-position: -611px -0px;
+}
+.wri.wri-MH.wri-name.wri-hover:hover {
+  background-position: -613px -2px;
+}
+.wri.wri-MH.wri-name:after {
+  content: "MH";
+}
+.wri.wri-BT.wri-name {
+  background-position: -672px -0px;
+}
+.wri.wri-BT.wri-name.wri-hover:hover {
+  background-position: -674px -2px;
+}
+.wri.wri-BT.wri-name:after {
+  content: "BT";
+}
+.wri.wri-SWP.wri-name {
+  background-position: -733px -0px;
+}
+.wri.wri-SWP.wri-name.wri-hover:hover {
+  background-position: -735px -2px;
+}
+.wri.wri-SWP.wri-name:after {
+  content: "SWP";
+}
+.wri.wri-Naxx.wri-name {
+  background-position: -794px -0px;
+}
+.wri.wri-Naxx.wri-name.wri-hover:hover {
+  background-position: -796px -2px;
+}
+.wri.wri-Naxx.wri-name:after {
+  content: "Naxx";
+}
+.wri.wri-OS.wri-name {
+  background-position: -855px -0px;
+}
+.wri.wri-OS.wri-name.wri-hover:hover {
+  background-position: -857px -2px;
+}
+.wri.wri-OS.wri-name:after {
+  content: "OS";
+}
+.wri.wri-VoA.wri-name {
+  background-position: -916px -0px;
+}
+.wri.wri-VoA.wri-name.wri-hover:hover {
+  background-position: -918px -2px;
+}
+.wri.wri-VoA.wri-name:after {
+  content: "VoA";
+}
+.wri.wri-EoE.wri-name {
+  background-position: -977px -0px;
+}
+.wri.wri-EoE.wri-name.wri-hover:hover {
+  background-position: -979px -2px;
+}
+.wri.wri-EoE.wri-name:after {
+  content: "EoE";
+}
+.wri.wri-Uld.wri-name {
+  background-position: -1038px -0px;
+}
+.wri.wri-Uld.wri-name.wri-hover:hover {
+  background-position: -1040px -2px;
+}
+.wri.wri-Uld.wri-name:after {
+  content: "Uld";
+}
+.wri.wri-ToC.wri-name {
+  background-position: -1099px -0px;
+}
+.wri.wri-ToC.wri-name.wri-hover:hover {
+  background-position: -1101px -2px;
+}
+.wri.wri-ToC.wri-name:after {
+  content: "ToC";
+}
+.wri.wri-Ony.wri-name {
+  background-position: -1160px -0px;
+}
+.wri.wri-Ony.wri-name.wri-hover:hover {
+  background-position: -1162px -2px;
+}
+.wri.wri-Ony.wri-name:after {
+  content: "Ony";
+}
+.wri.wri-ICC.wri-name {
+  background-position: -1221px -0px;
+}
+.wri.wri-ICC.wri-name.wri-hover:hover {
+  background-position: -1223px -2px;
+}
+.wri.wri-ICC.wri-name:after {
+  content: "ICC";
+}
+.wri.wri-RS.wri-name {
+  background-position: -1282px -0px;
+}
+.wri.wri-RS.wri-name.wri-hover:hover {
+  background-position: -1284px -2px;
+}
+.wri.wri-RS.wri-name:after {
+  content: "RS";
+}
+.wri.wri-BH.wri-name {
+  background-position: -1343px -0px;
+}
+.wri.wri-BH.wri-name.wri-hover:hover {
+  background-position: -1345px -2px;
+}
+.wri.wri-BH.wri-name:after {
+  content: "BH";
+}
+.wri.wri-BoT.wri-name {
+  background-position: -1404px -0px;
+}
+.wri.wri-BoT.wri-name.wri-hover:hover {
+  background-position: -1406px -2px;
+}
+.wri.wri-BoT.wri-name:after {
+  content: "BoT";
+}
+.wri.wri-BWD.wri-name {
+  background-position: -1465px -0px;
+}
+.wri.wri-BWD.wri-name.wri-hover:hover {
+  background-position: -1467px -2px;
+}
+.wri.wri-BWD.wri-name:after {
+  content: "BWD";
+}
+.wri.wri-ToFW.wri-name {
+  background-position: -1526px -0px;
+}
+.wri.wri-ToFW.wri-name.wri-hover:hover {
+  background-position: -1528px -2px;
+}
+.wri.wri-ToFW.wri-name:after {
+  content: "ToFW";
+}
+.wri.wri-FL.wri-name {
+  background-position: -1587px -0px;
+}
+.wri.wri-FL.wri-name.wri-hover:hover {
+  background-position: -1589px -2px;
+}
+.wri.wri-FL.wri-name:after {
+  content: "FL";
+}
+.wri.wri-DS.wri-name {
+  background-position: -1648px -0px;
+}
+.wri.wri-DS.wri-name.wri-hover:hover {
+  background-position: -1650px -2px;
+}
+.wri.wri-DS.wri-name:after {
+  content: "DS";
+}
+.wri.wri-MV.wri-name {
+  background-position: -1709px -0px;
+}
+.wri.wri-MV.wri-name.wri-hover:hover {
+  background-position: -1711px -2px;
+}
+.wri.wri-MV.wri-name:after {
+  content: "MV";
+}
+.wri.wri-HoF.wri-name {
+  background-position: -1770px -0px;
+}
+.wri.wri-HoF.wri-name.wri-hover:hover {
+  background-position: -1772px -2px;
+}
+.wri.wri-HoF.wri-name:after {
+  content: "HoF";
+}
+.wri.wri-ToES.wri-name {
+  background-position: -1831px -0px;
+}
+.wri.wri-ToES.wri-name.wri-hover:hover {
+  background-position: -1833px -2px;
+}
+.wri.wri-ToES.wri-name:after {
+  content: "ToES";
+}
+.wri.wri-ToT.wri-name {
+  background-position: -1892px -0px;
+}
+.wri.wri-ToT.wri-name.wri-hover:hover {
+  background-position: -1894px -2px;
+}
+.wri.wri-ToT.wri-name:after {
+  content: "ToT";
+}
+.wri.wri-SoO.wri-name {
+  background-position: -1953px -0px;
+}
+.wri.wri-SoO.wri-name.wri-hover:hover {
+  background-position: -1955px -2px;
+}
+.wri.wri-SoO.wri-name:after {
+  content: "SoO";
+}
+.wri.wri-AQ40 {
+  background-position: -2040px 0;
+}
+.wri.wri-BT {
+  background-position: -2360px 0;
+}
+.wri.wri-BWD {
+  background-position: -2880px 0;
+}
+.wri.wri-BWL {
+  background-position: -1960px 0;
+}
+.wri.wri-FL {
+  background-position: -2960px 0;
+}
+.wri.wri-Gruul {
+  background-position: -2120px 0;
+}
+.wri.wri-ICC {
+  background-position: -2720px 0;
+}
+.wri.wri-Kara {
+  background-position: -2080px 0;
+}
+.wri.wri-Mag {
+  background-position: -2160px 0;
+}
+.wri.wri-manatombs {
+  background-position: -760px 0;
+}
+.wri.wri-maraudon {
+  background-position: -240px 0;
+}
+.wri.wri-MC {
+  background-position: -1920px 0;
+}
+.wri.wri-Naxx {
+  background-position: -2440px 0;
+}
+.wri.wri-Ony {
+  background-position: -2680px 0;
+}
+.wri.wri-TK {
+  background-position: -2280px 0;
+}
+.wri.wri-BoT {
+  background-position: -2840px 0;
+}
+.wri.wri-MH {
+  background-position: -2320px 0;
+}
+.wri.wri-EoE {
+  background-position: -2560px 0;
+}
+.wri.wri-OS {
+  background-position: -2480px 0;
+}
+.wri.wri-SW {
+  background-position: -2400px 0;
+}
+.wri.wri-ToTW {
+  background-position: -2920px 0;
+}
+.wri.wri-ToC {
+  background-position: -2640px 0;
+}
+.wri.wri-Uld {
+  background-position: -2600px 0;
+}
+.wri.wri-VoA {
+  background-position: -2520px 0;
+}
+.wri.wri-DS {
+  background-position: -3000px 0;
+}
+.wri.wri-HoF {
+  background-position: -3520px 0;
+}
+.wri.wri-MV {
+  background-position: -3560px 0;
+}
+.wri.wri-ToES {
+  background-position: -3600px 0;
+}
+.wri.wri-ToT {
+  background-position: -4160px 0;
+}
+.wri.wri-SoO {
+  background-position: -4400px 0;
+}
+.wri.wri-HM {
+  background-position: -4760px 0;
+}
+.wri.wri-BrF {
+  background-position: -4800px 0;
+}
+
+/*# sourceMappingURL=wow-raid-icons.css.map */
