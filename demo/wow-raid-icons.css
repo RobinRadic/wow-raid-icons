@@ -28,7 +28,7 @@
   width: 38px;
   height: 38px;
   margin: 1px 11px 1px 1px;
-  background: #3b1c11 url("../images//thumbnails.png") no-repeat;
+  background: #3b1c11 url("images//thumbnails.png") no-repeat;
   position: relative;
 }
 .wri.wri-hover:hover {
